@@ -1,0 +1,142 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin-bottom: 50px;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  margin: 0;
+}
+
+ul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin: 0;
+  font-weight: normal;
+}
+ul li::marker {
+  content: "🔴";
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.content h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+.text {
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+.circle img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+.dbox1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.dbox3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.year_company {
+  min-width: 30%;
+  margin-bottom: 10px;
+}
+.rounded-text {
+  display: inline-block;
+  width: 500px;
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+.proj_details {
+  margin-bottom: 50px;
+}
+.proj_title {
+  margin-bottom: 10px;
+}
+figure img {
+  width: 50px;
+  height: 50px;
+  overflow: visible;
+  object-fit: contain;
+}
+.logos {
+  display: flex;
+}
+.rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.p-container {
+  display: flex;
+  width: 60%; /* Full width */
+  height: 5px; /* Full width */
+  background-color: #00000080; /* Grey background */
+  position: relative; /* Position relative to contain the circle */
+  border-radius: 50px;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #ff0000; /* Green background */
+  position: relative; /* Position relative to move the circle */
+  border-radius: 50px;
+}
+
+.p-circle {
+  width: 10px; /* Width of the circle */
+  height: 10px; /* Height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  background-color: black; /* Black background */
+  position: absolute; /* Position absolute to move it */
+  top: 50%; /* Position it at the top of the progress bar */
+  right: -0px; /* Position it at the end of the progress bar */
+  transform: translateY(-50%); /* Center the circle vertically */
+}
